@@ -8,7 +8,7 @@ customers as (
 
 orders as (
 
-    select * from {{ source('ecom', 'raw_orders') }}
+    select * from {{ ref('stg_orders') }}
 
 ),
 
