@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('ecom', 'raw_orders') }} where subtotal > 1000;
